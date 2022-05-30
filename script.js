@@ -1,6 +1,7 @@
 const sectionColorGuess = document.getElementById('color-guess');
 const pColorGuess = document.getElementById('rgb-color');
 const pAnswer = document.getElementById('answer');
+const buttonResetGame = document.getElementById('reset-game');
 
 // Requisito 4
 function generateColors() {
@@ -41,3 +42,11 @@ function generateCircles() {
 }
 
 generateCircles();
+
+function resetGame() {
+  sectionColorGuess.innerHTML = '';
+  pAnswer.innerText = 'Escolha uma cor';
+  generateCircles();
+}
+
+buttonResetGame.addEventListener('click', resetGame);
