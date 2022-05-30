@@ -36,8 +36,7 @@ function generateCircles() {
     coloredCircles.addEventListener('click', rightOrWorng);
     sectionColorGuess.appendChild(coloredCircles);
   }
-  const randomNumber = Math.floor(Math.random() * arrayColors.length);
-  const trueColor = arrayColors[randomNumber];
+  const trueColor = arrayColors[Math.floor(Math.random() * arrayColors.length)];
   pColorGuess.innerText = trueColor; // Requisito 2
 }
 
