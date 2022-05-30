@@ -32,11 +32,11 @@ function generateCircles() {
     const coloredCircles = document.createElement('div');
     coloredCircles.classList.add('ball');
     coloredCircles.style.backgroundColor = newColor;
-    coloredCircles.addEventListener('click', rightOrWorng)
+    coloredCircles.addEventListener('click', rightOrWorng);
     sectionColorGuess.appendChild(coloredCircles);
   }
-  let randomNumber = Math.floor(Math.random() * arrayColors.length);
-  trueColor = arrayColors[randomNumber];
+  const randomNumber = Math.floor(Math.random() * arrayColors.length);
+  const trueColor = arrayColors[randomNumber];
   pColorGuess.innerText = trueColor; // Requisito 2
 }
 
