@@ -1,8 +1,9 @@
 const sectionColorGuess = document.getElementById('color-guess');
+const pColorGuess = document.getElementById('rgb-color');
 
 // Requisito 4
 function generateColors() {
-  let arrayColor = [];
+  const arrayColor = [];
   for (let index = 0; index < 3; index += 1) {
     const numberColor = Math.floor(Math.random() * 255);
     arrayColor[index] = numberColor;
@@ -15,12 +16,22 @@ function generateColors() {
 function generateCircles() {
   const arrayColors = [];
   for (let index = 0; index < 6; index += 1) {
-    arrayColors[index] = generateColors();
+    const newColor = generateColors();
+    arrayColors.push(newColor);
     const coloredCircles = document.createElement('div');
     coloredCircles.classList.add('ball');
-    coloredCircles.style.backgroundColor = arrayColors[index];
+    coloredCircles.style.backgroundColor = newColor;
     sectionColorGuess.appendChild(coloredCircles);
   }
+  let randomNumber = Math.floor(Math.random() * arrayColors.length);
+  trueColor = arrayColors[randomNumber];
+  pColorGuess.innerText = trueColor;
+  // console.log(trueColor);
 }
 
 generateCircles();
+
+// Requisito 2
+function colorToGuess() {
+
+}
