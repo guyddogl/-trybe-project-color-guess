@@ -19,10 +19,10 @@ function rightOrWorng(event) {
   const clickedColor = event.target.style.backgroundColor;
   if (clickedColor === pColorGuess.innerText) {
     pAnswer.innerText = 'Acertou!';
-    pAnswer.className  = 'right-color';
+    pAnswer.className = 'right-color';
   } else {
     pAnswer.innerText = 'Errou! Tente novamente!';
-    pAnswer.className  = 'wrong-color';
+    pAnswer.className = 'wrong-color';
   }
 }
 
@@ -46,7 +46,7 @@ generateCircles();
 function resetGame() {
   sectionColorGuess.innerHTML = '';
   pAnswer.innerText = 'Escolha uma cor';
-  pAnswer.className  = 'default-color';
+  pAnswer.className = 'default-color';
   generateCircles();
 }
 
