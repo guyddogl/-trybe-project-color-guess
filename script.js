@@ -2,6 +2,7 @@ const sectionColorGuess = document.getElementById('color-guess');
 const pColorGuess = document.getElementById('rgb-color');
 const pAnswer = document.getElementById('answer');
 const buttonResetGame = document.getElementById('reset-game');
+const score = document.getElementById('score');
 
 // Requisito 4
 function generateColors() {
@@ -14,12 +15,21 @@ function generateColors() {
   return randomColor;
 }
 
+// Requisito 7
+let points = 0;
+
+function countScore() {
+  points += 3;
+  score.innerText = points;
+}
+
 // Requisito 5
 function rightOrWorng(event) {
   const clickedColor = event.target.style.backgroundColor;
   if (clickedColor === pColorGuess.innerText) {
     pAnswer.innerText = 'Acertou!';
     pAnswer.className = 'right-color';
+    countScore();
   } else {
     pAnswer.innerText = 'Errou! Tente novamente!';
     pAnswer.className = 'wrong-color';

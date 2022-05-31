@@ -50,7 +50,7 @@ body {
   font-family: Electrolize, sans-serif;
   font-size: 22px;
   font-weight: 700;
-  transition: ease 1s;
+  transition: ease 0.5s;
 }
 
 .right-color {
@@ -59,7 +59,7 @@ body {
   font-family: Electrolize, sans-serif;
   font-size: 22px;
   font-weight: 700;
-  transition: ease 1s;
+  transition: ease 0.5s;
 }
 
 .wrong-color {
@@ -68,7 +68,7 @@ body {
   font-family: Electrolize, sans-serif;
   font-size: 22px;
   font-weight: 700;
-  transition: ease 1s;
+  transition: ease 0.5s;
 }
 
 .btn {
