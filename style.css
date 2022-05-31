@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Electrolize&family=Press+Start+2P&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Electrolize&family=Press+Start+2P&display=swap') ;
 
 body {
   background: linear-gradient(to right top, #d16ba5, #aa8fd8, #9a9ae1, #8aa7ec, #69bff8);
@@ -12,7 +12,7 @@ body {
 }
 
 #title {
-  font-family: 'Electrolize', sans-serif;
+  font-family: Electrolize, sans-serif;
   font-weight: 700;
   color: #203060;
   padding: 10px 5px;
@@ -44,7 +44,7 @@ body {
 
 .default-color {
   color: white;
-  font-family: 'Electrolize', sans-serif;
+  font-family: Electrolize, sans-serif;
   font-size: 22px;
   font-weight: 700;
   transition: ease 1s;
@@ -53,7 +53,7 @@ body {
 .right-color {
   color: white;
   background: green;
-  font-family: 'Electrolize', sans-serif;
+  font-family: Electrolize, sans-serif;
   font-size: 22px;
   font-weight: 700;
   transition: ease 1s;
@@ -62,7 +62,7 @@ body {
 .wrong-color {
   color: white;
   background: red;
-  font-family: 'Electrolize', sans-serif;
+  font-family: Electrolize, sans-serif;
   font-size: 22px;
   font-weight: 700;
   transition: ease 1s;
