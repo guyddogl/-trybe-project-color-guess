@@ -19,8 +19,10 @@ function rightOrWorng(event) {
   const clickedColor = event.target.style.backgroundColor;
   if (clickedColor === pColorGuess.innerText) {
     pAnswer.innerText = 'Acertou!';
+    pAnswer.className  = 'right-color';
   } else {
     pAnswer.innerText = 'Errou! Tente novamente!';
+    pAnswer.className  = 'wrong-color';
   }
 }
 
@@ -36,8 +38,7 @@ function generateCircles() {
     coloredCircles.addEventListener('click', rightOrWorng);
     sectionColorGuess.appendChild(coloredCircles);
   }
-  const trueColor = arrayColors[Math.floor(Math.random() * arrayColors.length)];
-  pColorGuess.innerText = trueColor; // Requisito 2
+  pColorGuess.innerText = arrayColors[Math.floor(Math.random() * arrayColors.length)]; // Requisito 2
 }
 
 generateCircles();
@@ -45,6 +46,7 @@ generateCircles();
 function resetGame() {
   sectionColorGuess.innerHTML = '';
   pAnswer.innerText = 'Escolha uma cor';
+  pAnswer.className  = 'default-color';
   generateCircles();
 }
 
