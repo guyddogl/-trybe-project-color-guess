@@ -10,4 +10,4 @@ Links: <a href="https://guyddogl.github.io/trybe-project-color-guess/">Preview</
 ![Bootstrap](https://img.shields.io/badge/-Bootstrap-1b374b?style=for-the-badge&logo=Bootstrap)&nbsp;
 <hr/>
 
-<img src="https://guyddogl.github.io/trybe-project-color-guess/assets/img/colorguess.gif" alt="Gif Preview" />
+<img src="https://guyddogl.github.io/trybe-project-color-guess/colorguess.gif" alt="Gif Preview" />
