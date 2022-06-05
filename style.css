@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Electrolize&family=Press+Start+2P&display=swap') ;
+
+body {
+  background: linear-gradient(to right top, #d16ba5, #aa8fd8, #9a9ae1, #8aa7ec, #69bff8);
+  background-attachment: fixed;
+}
+
+.header-bg {
+  background: white;
+  border-radius: 55px;
+  box-shadow: rgba(99, 99, 99, 0.2) 0 2px 8px 0;
+}
+
+#title {
+  font-family: Electrolize, sans-serif;
+  font-weight: 700;
+  color: #203060;
+  padding: 10px 5px;
+  border-radius: 25px;
+}
+
+#rgb-color {
+  margin-top: -20px;
+  font-weight: 700;
+  color: #203060;
+}
+
+#color-guess {
+  gap: 10px;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+
+.ball {
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  cursor: pointer;
+  border: 2px solid white;
+  box-shadow: rgba(99, 99, 99, 0.2) 0 2px 8px 0;
+}
+
+.ball:hover {
+  box-shadow: rgba(50, 50, 93, 0.25) 0 13px 27px -5px, rgba(0, 0, 0, 0.3) 0 8px 16px -8px;
+}
+
+.display {
+  display: none;
+}
+
+.disable {
+  pointer-events: none;
+}
+
+.score-bg {
+  background: #79d7b9;
+  color: white;
+  display: inline-block;
+  padding: 10px 20px;
+  border-radius: 25px;
+  font-family: 'Press Start 2P', cursive;
+  font-size: 22px;
+  font-weight: 400;
+  box-shadow: rgba(99, 99, 99, 0.2) 0 2px 8px 0;
+  text-shadow: -1px 1px 2px black;
+  transition: ease 0.5s;
+}
+
+.plus {
+  color: green;
+  font-family: 'Press Start 2P', cursive;
+  font-size: 22px;
+  font-weight: 400;
+  transition: ease 1s;
+}
+
+.default-color {
+  color: white;
+  font-family: Electrolize, sans-serif;
+  font-size: 22px;
+  font-weight: 700;
+  transition: ease 0.5s;
+}
+
+.right-color {
+  color: white;
+  background: green;
+  font-family: Electrolize, sans-serif;
+  font-size: 22px;
+  font-weight: 700;
+  transition: ease 0.5s;
+}
+
+.wrong-color {
+  color: white;
+  background: red;
+  font-family: Electrolize, sans-serif;
+  font-size: 22px;
+  font-weight: 700;
+  transition: ease 0.5s;
+}
+
+.btn {
+  font-family: 'Press Start 2P', cursive;
+  font-size: 12px;
+}
